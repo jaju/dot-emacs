@@ -6,6 +6,6 @@ if [ "x$DIRNAME" != "xpersonal" ]; then
     exit 1
 fi
 cd $THISDIR/..
-for f in custom prelude-modules; do
+for f in prelude-modules; do
     ln -s personal/$f.le $f.el
 done
